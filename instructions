@@ -1,0 +1,16 @@
+Compiling commands : 
+for old.tex:
+
+xelatex old.tex
+bibtex old.aux
+xelatex old.tex
+xelatex old.tex
+
+
+for difference:
+
+latexdiff old.tex new.tex > diff.tex
+xelatex diff.tex
+bibtex diff.tex
+xelatex diff.tex
+xelatex diff.tex
