@@ -45,13 +45,17 @@
 %
 % For tracking purposes - this is V1.9 - April 2009
 
-\documentclass{sig-alternate}
+\documentclass[conference]{IEEEtran}
 \usepackage{blkarray}
 \usepackage[hyphens]{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
 \begin{document}
+\hyphenation{op-tical net-works semi-conduc-tor}
 %
 % --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
 %\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
@@ -81,11 +85,10 @@
 % These 'additional authors' will be output/set for you
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
-\numberofauthors{4} %  in this sample file, there are a *total*
+%  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
-\author{
 % You can go ahead and credit any number of authors here,
 % e.g. one 'row of three' or two rows (consisting of one row of three
 % and a second row of one, two or three).
@@ -97,30 +100,25 @@
 % e-mail address with \email.
 %
 % 1st. author
-\alignauthor
-Ashish Kumar\\
-       {\mytext{Dept. of Computer Science}}\\
-       {\mytext{IIT Ropar}}\\
-       \email{2016csb1033@iitrpr.ac.in}
-% 2nd. author
-\alignauthor
-Siddharth Nahar\\
-       {\mytext{Dept. of Computer Science}}\\
-       {\mytext{IIT Ropar}}\\
-       \email{2016csb1043@iitrpr.ac.in}
-% 3rd. author
-\and 
-\alignauthor Rahul Lahane\\
-       \mytext{Dept. of Computer Science}\\
-       \mytext{IIT Ropar}\\
-       \email{eleryan@nus.edu.sg}
- % use '\and' if you need 'another row' of author names
-% 4th. author
-\alignauthor Anurag Singh Mehta\\
-       \mytext{Dept. of Computer Science}\\
-       \mytext{IIT Ropar}\\
-       \email{ooiwt@comp.nus.edu.sg}
-}
+\author{\IEEEauthorblockN{Ashish Kumar}
+\IEEEauthorblockA{Dept. of Computer Science\\
+IIT Ropar\\
+Email: 2016csb1033@iitrpr.ac.in}
+\and
+\IEEEauthorblockN{Siddharth Nahar}
+\IEEEauthorblockA{Dept. of Computer Science\\
+IIT Ropar
+Email: 2016csb1043@iitrpr.ac.in}
+\and
+\IEEEauthorblockN{Rahul Lahane}
+\IEEEauthorblockA{Dept. of Computer Science\\
+IIT Ropar\\
+Email: 2016csb10xx@iitrpr.ac.in}
+\and
+\IEEEauthorblockN{Anurag Singh Mehta}
+\IEEEauthorblockA{Dept. of Computer Science\\
+IIT Ropar
+Email: 2016csb1111@iitrpr.ac.in}}
 
 \maketitle
 \begin{abstract}
@@ -141,7 +139,7 @@ based diversity measurement, state-based video editing rules, and
 view quality in automated video mashup generations. Experimen-
 tal results have been provided to demonstrate the effectiveness of
 MoViMash framework.
-\end{abstract}\\\\
+\end{abstract}
 \textbf{Categories and Subject Descriptors}
 I.2.10 [Vision and Scene Understanding]: Video Analysis\\
 \textbf{General Terms:} Algorithms, Design.\\
@@ -531,7 +529,7 @@ across the frames for calculating camera motion. The final value of shakiness
 score, S s , the normalization value is 300;
 for any value above 300, S s is saturated to 1.
 
-\\\\
+
 \begin{figure}
     \centering
     \includegraphics{img4.png}
@@ -582,7 +580,7 @@ and their corresponding lengths.
        \end{equation}
        
 \begin{equation}
-              \begin{blockarray}{ccccccc}
+              \begin{blockarray}{cccccccc}
                      & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
                     \begin{block}{c(ccccccc)}
                       \mathcal{CN} & 1/31 & 2/31 & 4/31 & 7/31 & 7/31 & 6/31 & 4/31  \\
@@ -652,8 +650,9 @@ age with good contrast is appreciated by the viewers \cite{10}.
 Therefore, contrast is also chosen as one of the metrics. The
 contrast score S c is calculated as standard deviation of the
 pixel intensities.
-
+\begin{equation}
 S^{c} = \frac{1}{255}\frac{1}{N_w*N_h}\sum_{x=0}^{N_w}\sum_{y=0}^{N_h} (I(x,y)-\overline{I})^{2}
+\end{equation}
 
  \item \textbf{Burned Pixels: }It has been identified that pixels that are
 close to 255 or 0 are generally not informative \cite{15}. If N b
@@ -670,7 +669,7 @@ while a value of 0 means at least 25\% pixels are burnt.
 \end{itemize}
 
 The individual quality scores are multiplied to calculate overall
-video quality score S_q, i.e.,
+video quality score $S_q$, i.e.,
 
 \begin{equation}
 S^q = S^b\times S^{br}\times S^{im}\times S^c\times S^{bp}
@@ -687,7 +686,7 @@ i.e.,
 
 
 \begin{equation}
-\matclass{H} = \big\{\big(I_j^h,\Delta_j \big)|1\leq j\leq N^v\big\}
+\mathcal{H} = \big\{\big(I_j^h,\Delta_j \big)|1\leq j\leq N^v\big\}
 \end{equation}
 where ${N^v}$ is the number videos selected in the recent past. Each
 tuple has the following two entries:
@@ -704,8 +703,8 @@ Let V S be the view similarity matrix:
 \textit{V S} = \big\{v^{ij}|1\leq i\leq n 1\leq j\leq N^v;\forall i=j,v^{ij}=1 \big\}
 \end{equation}
 
-where n is number of cameras, and $\matclass{v_ij}$ is the view similarity
-measure between current frame from the $\matclass{i^{th}}$  video and $\matclass{j^{th}}$ frame
+where n is number of cameras, and $\mathcal{v_ij}$ is the view similarity
+measure between current frame from the $\mathcal{i^{th}}$  video and $\mathcal{j^{th}}$ frame
 of the history. The overall steps of diversity
 calculation are as follows:
 \begin{enumerate}
@@ -714,11 +713,15 @@ rent frame with the frames stored in the history, i.e.,
 \begin{equation}
 v^{ij} = Diff(I_i^c,I_j^h)
 \end{equation}
-where ${I^{c}_i}$ is the current frame of $i^{th}$ camera, ${I^h_j}$ h is the ${j^}{th}$
+where ${I^{c}_i}$ is the current frame of $i^{th}$ camera, ${I^h_j}$ h is the ${j^{th}}$
 frame of the history, and Diff can be any function to calcu-
 late view similarity. We are using SSIM \cite{17} for this purpose\\\\
-\includegraphics{img5.png}
-\caption{Figure 5: Diversity value for two candidate videos and final mashup}
+\begin{figure}
+    \centering
+    \includegraphics{img5.png}
+    \caption{Figure 5: Diversity value for two candidate videos and final mashup}
+    \label{fig:my_label}
+\end{figure}
 \\
     \item For the given content, the user interest decreases with time
 over which the user watches same or similar content. Hence,
@@ -768,7 +771,7 @@ ity of the videos. Nevertheless, these coefficients should be deter-
 mined based on the type of performance. For instance, in a hip-hop
 \begin{table}
 \centering
-\fivept
+\small
 \caption{Details of the dataset}
 \begin{tabular}{p{1.5cm}|p{1cm}|p{1.5cm}|p{1cm}|p{1cm}|p{1cm}} \hline
 Performance&Type&Recordings&Duration(m)&Frame&Resolution\\ \hline
@@ -799,16 +802,22 @@ calculation, we define bonus length $L_b$ . Suppose $S^{f}_1$ is the final combi
 of the second best camera. Now the length for the currently selected
 video, $L_s$ , is determined as follows:
 \begin{equation}
-\matclass{L}^s = (1-\varsigma)\matclass{L}^e+\varsigma \matclass{L}^b\upsilon
+\mathcal{L}^s = (1-\varsigma)\mathcal{L}^e+\varsigma \mathcal{L}^b\upsilon
 \end{equation}
 \\
+\begin{figure*}
+    \centering
+    \includegraphics{img6.png}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure*}
 where v is the difference of the scores, i.e., v = ${S^{f}_1}$ - ${S^{f}_2}$ and $\zeta$ is
 weighting coefficient. In our experiments, we found the empirical
-values of $\matclass{L}_b$ = 25 and $\zeta$ = 0.1 works well. A higher value of
+values of $\mathcal{L}_b$ = 25 and $\zeta$ = 0.1 works well. A higher value of
 $\zeta$ will increase impact of the bonus length L b on the selected shot
 length. In this way, $\zeta$ can be manipulated to override the prediction
 made by learned statistics to select longer or shorter shots of given
-quality score $\matclass{S}_f$ .
+quality score $\mathcal{S}_f$ .
 
 In general cases, camera switching only takes place after the se-
 lected length of time. MoViMash, however, performs continuous
@@ -821,12 +830,6 @@ The main goal of the experiments is to show that the proposed
 framework produces a mashup with better view quality and diver-
 sity than earlier works. In addition, we also compare our result with
 human-edited versions of mashups. The dataset consists of video
-\begin{figure*}
-    \centering
-    \includegraphics{img6.png}
-    \caption{Caption}
-    \label{fig:my_label}
-\end{figure*}
 recordings of four performances. For each performance, we cre-
 ate three mashups: (1) using proposed framework (MoViMash) (2)
 based on ranking average of shakiness, diversity, and video quality
@@ -924,7 +927,7 @@ The users rate the videos with a rating ranged between 1 to 5, where
 are given in Table 3.
 \begin{table}
 \centering
-\sevenpt
+\small
 \caption{User study questions}
 \begin{tabular}{p{1cm}|p{7cm}}
 A&Quality of video editing\\ \hline
@@ -968,7 +971,7 @@ in comparison with VQ-Only based mashup.
 \begin{figure}
     \centering
     \includegraphics{img8.png}
-    \sevenpt
+    \small
     \caption{User response on overall quality of video}
     \label{fig:my_label}
 \end{figure}
@@ -1004,6 +1007,7 @@ The performance of video editors can get even worse when they
 have to make video selection in real-time. This finding makes a
 strong case for automated mashup creation for live applications of
 video sharing and broadcasting.
+
 
 \subsubsection{Overall Video Quality}
 User ratings for overall video quality are shown in the Figure 8.
@@ -1042,7 +1046,7 @@ shakiness calculation can be omitted. Furthermore, to make the
 system scalable, we can process downscaled images as the video
 resolution is not critical for the current system components.
 
-\section{CONCLUSIONS & FUTURE WORK}
+\section{CONCLUSIONS \& FUTURE WORK}
 In this paper, we have proposed and validated an online video
 mashup creation framework, MoViMash, for videos recorded by
 mobile devices. Based on the experiments and user study, we make
@@ -1071,7 +1075,7 @@ final mashup.
 \section{Acknowledgment}
 This research is conducted under the NExT Search Center, sup-
 ported by the Singapore National Research Foundation and the In-
-teractive Digital Media R&D Program Office of Media Develop-
+teractive Digital Media R\&D Program Office of Media Develop-
 ment Authority under research grant WBS:R-252-300-001-490.
 
 \urlstyle{same}
