@@ -1,2 +1,2 @@
 # latexTask
-latex assignment for software shystems lab course
+latex assignment for software systems lab course
