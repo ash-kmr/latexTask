@@ -1,0 +1,130 @@
+\begin{thebibliography}{10}
+
+\bibitem{1}
+\url{http://www.bloomberg.com/news/2011-04-07/high-resolution-cameras-will-drive-mobile-phone-shipments-above-1-billion.html.}
+
+\bibitem{2}
+\url{http://www.businesswire.com/news/home/20110829005068/en/photobucket-survey-video-uploads-mobile-devices-rise.}
+
+\bibitem{3}
+M.~Al-Hames, B.~H{\"o}rnler, C.~Scheuermann, and G.~Rigoll.
+\newblock Using audio, visual, and lexical features in a multi-modal virtual
+  meeting director.
+\newblock In {\em International Workshop on Machine Learning for Multimodal
+  Interaction}, pages 63--74. Springer, 2006.
+
+\bibitem{4}
+M.~Campanella, H.~Weda, and M.~Barbieri.
+\newblock Edit while watching: home video editing made easy.
+\newblock In {\em Multimedia Content Access: Algorithms and Systems}, volume
+  6506, page 65060L. International Society for Optics and Photonics, 2007.
+
+\bibitem{5}
+F.~Crete, T.~Dolmiere, P.~Ladret, and M.~Nicolas.
+\newblock The blur effect: perception and estimation with a new no-reference
+  perceptual blur metric.
+\newblock In {\em Human vision and electronic imaging XII}, volume 6492, page
+  64920I. International Society for Optics and Photonics, 2007.
+
+\bibitem{6}
+R.~Cutler, Y.~Rui, A.~Gupta, J.~J. Cadiz, I.~Tashev, L.-w. He, A.~Colburn,
+  Z.~Zhang, Z.~Liu, and S.~Silverberg.
+\newblock Distributed meetings: A meeting capture and broadcasting system.
+\newblock In {\em Proceedings of the tenth ACM international conference on
+  Multimedia}, pages 503--512. ACM, 2002.
+
+\bibitem{7}
+E.~E. de~Lima, C.~T. Pozzer, M.~C. d'Ornellas, A.~E. Ciarlini, B.~Feij{\'o},
+  and A.~L. Furtado.
+\newblock Virtual cinematography director for interactive storytelling.
+\newblock In {\em Proceedings of the International Conference on Advances in
+  Computer Enterntainment Technology}, pages 263--270. ACM, 2009.
+
+\bibitem{8}
+A.~Engstrom, M.~Esbjornsson, O.~Juhlin, and M.~Perry.
+\newblock Producing collaborative video: developing an interactive user
+  experience for mobile tv.
+\newblock In {\em Proceedings of the 1st international conference on Designing
+  interactive user experiences for TV and video}, pages 115--124. ACM, 2008.
+
+\bibitem{9}
+E.~Machnicki and L.~A. Rowe.
+\newblock Virtual director: Automating a webcast.
+\newblock In {\em Multimedia Computing and Networking 2002}, volume 4673, pages
+  208--226. International Society for Optics and Photonics, 2001.
+
+\bibitem{10}
+A.~K. Moorthy, P.~Obrador, and N.~Oliver.
+\newblock Towards computational models of the visual aesthetic appeal of
+  consumer videos.
+\newblock In {\em European Conference on Computer Vision}, pages 1--14.
+  Springer, 2010.
+
+\bibitem{11}
+N.~Quang Minh~Khiem, G.~Ravindra, A.~Carlier, and W.~T. Ooi.
+\newblock Supporting zoomable video streams with dynamic region-of-interest
+  cropping.
+\newblock In {\em Proceedings of the first annual ACM SIGMM conference on
+  Multimedia systems}, pages 259--270. ACM, 2010.
+
+\bibitem{12}
+A.~Ranjan, R.~Henrikson, J.~Birnholtz, R.~Balakrishnan, and D.~Lee.
+\newblock Automatic camera control using unobtrusive vision and audio tracking.
+\newblock In {\em Proceedings of Graphics Interface 2010}, pages 47--54.
+  Canadian Information Processing Society, 2010.
+
+\bibitem{13}
+A.~Senior, A.~Hampapur, Y.-L. Tian, L.~Brown, S.~Pankanti, and R.~Bolle.
+\newblock Appearance models for occlusion handling.
+\newblock {\em Image and Vision Computing}, 24(11):1233--1243, 2006.
+
+\bibitem{15}
+P.~Shrestha, H.~Weda, M.~Barbieri, E.~H. Aarts, et~al.
+\newblock Automatic mashup generation from multiple-camera concert recordings.
+\newblock In {\em Proceedings of the 18th ACM international conference on
+  Multimedia}, pages 541--550. ACM, 2010.
+
+\bibitem{14}
+P.~Shrstha, M.~Barbieri, and H.~Weda.
+\newblock Synchronization of multi-camera video recordings based on audio.
+\newblock In {\em Proceedings of the 15th ACM international conference on
+  Multimedia}, pages 545--548. ACM, 2007.
+
+\bibitem{16}
+J.~Wang, C.~Xu, E.~Chng, H.~Lu, and Q.~Tian.
+\newblock Automatic composition of broadcast sports video.
+\newblock {\em Multimedia Systems}, 14(4):179--193, 2008.
+
+\bibitem{17}
+Z.~Wang, A.~C. Bovik, H.~R. Sheikh, and E.~P. Simoncelli.
+\newblock Image quality assessment: from error visibility to structural
+  similarity.
+\newblock {\em IEEE transactions on image processing}, 13(4):600--612, 2004.
+
+\bibitem{18}
+Z.~Wang, H.~R. Sheikh, and A.~C. Bovik.
+\newblock No-reference perceptual quality assessment of jpeg compressed images.
+\newblock In {\em Image Processing. 2002. Proceedings. 2002 International
+  Conference on}, volume~1, pages I--I. IEEE, 2002.
+
+\bibitem{19}
+T.~Yang, Q.~Pan, J.~Li, and S.~Z. Li.
+\newblock Real-time multiple objects tracking with occlusion handling in
+  dynamic scenes.
+\newblock In {\em Computer Vision and Pattern Recognition, 2005. CVPR 2005.
+  IEEE Computer Society Conference on}, volume~1, pages 970--975. IEEE, 2005.
+
+\bibitem{20}
+B.~Yu, C.~Zhang, Y.~Rui, and K.~Nahrstedt.
+\newblock A three-layer virtual director model for supporting automated
+  multi-site distributed education.
+\newblock In {\em Multimedia and Expo, 2006 IEEE International Conference on},
+  pages 637--640. IEEE, 2006.
+
+\bibitem{21}
+C.~Zhang, Y.~Rui, J.~Crawford, and L.-W. He.
+\newblock An automated end-to-end lecture capture and broadcasting system.
+\newblock {\em ACM Transactions on Multimedia Computing, Communications, and
+  Applications (TOMM)}, 4(1):6, 2008.
+
+\end{thebibliography}

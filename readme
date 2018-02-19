@@ -1,0 +1,31 @@
+git init
+git remote 
+git add .
+git commit -m "initial commit"
+git push
+git add .
+git commit -m "initial commit + added new.tex"
+git push
+git add .
+git commit -m "added team member names"
+git push
+git add .
+git commit -m "changed a line"
+git push
+git add .
+git commit -m "deleted a sentence"
+git push
+git add .
+git commit -m "changed language of a line in introduction"
+git push
+git pull
+git checkout theirs
+git merge origin
+git add .
+git commit -m"changed by other user"
+git push
+git add .
+git commit -m "add ieee conference cls"
+git add .
+git commit -m "finalized"
+git push
